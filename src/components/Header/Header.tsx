@@ -1,4 +1,5 @@
 import React from 'react';
+import { colors, sizes } from '../../core/styles/globalStyles';
 import Typo from '../Typo';
 import * as Styled from './styles';
 
@@ -12,9 +13,9 @@ const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
     <Styled.StyledHeader>
       <Typo
         text={title}
-        color={'#2f0079'}
+        color={colors.primary}
         weight={'bold'}
-        size={'21px'}
+        size={sizes.sizeL}
         fontStyle={'italic'}
       />
     </Styled.StyledHeader>

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { ICamPictureProps } from './CamPicture';
 import cam_view from '../../assets/cam_view.png';
+import { colors } from '../../core/styles/globalStyles';
 
 export const StyledWrappedCamPicture = styled.div`
   height: 179px;
@@ -13,7 +14,9 @@ export const StyledWrappedCamPicture = styled.div`
   justify-content: center;
   border: ${({ valid }: ICamPictureProps) =>
     typeof valid === 'boolean' &&
-    (valid ? '2px solid #69CC8B' : '2px solid #C00000')};
+    (valid
+      ? `2px solid ${colors.greenLight}`
+      : `2px solid ${colors.redLight}`)};
 `;
 
 export const StyledCamPicture = styled.img`

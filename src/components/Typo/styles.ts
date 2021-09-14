@@ -12,8 +12,9 @@ interface ITypo {
 export const StyledTypo = styled.h1<ITypo>`
   font-size: ${({ size }) => size};
   color: ${({ color }) => color};
-  font-weight: ${({ weight }) => weight};
+  font-weight: ${({ weight }) => weight || 'normal'};
   text-transform: ${({ textTransform }) => textTransform};
   width: ${({ width }) => width};
   font-style: ${({ fontStyle }) => fontStyle};
+  text-align: center;
 `;

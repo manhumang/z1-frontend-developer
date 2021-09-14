@@ -1,4 +1,4 @@
-import { lazy } from 'react';
+import CamView from '../CamView';
+import Home from '../Home';
 
-const Home = lazy(() => import('../Home'));
-export default { Home };
+export default { Home, CamView };

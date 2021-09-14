@@ -3,15 +3,14 @@ import * as Styled from './styles';
 
 export interface ICamPictureProps {
   photo?: string;
-  valid?: boolean;
+  valid?: boolean | null;
 }
 
 const Picture: React.FC<ICamPictureProps> = (props: ICamPictureProps) => {
   const { photo, valid } = props;
   return (
-    <Styled.StyledWrappedCamPicture valid={valid}>
+    <Styled.StyledWrappedCamPicture valid={valid} className={'cam'}>
       <Styled.StyledCamPicture src={photo} />
-      {/* {<img src={photo} />} */}
     </Styled.StyledWrappedCamPicture>
   );
 };

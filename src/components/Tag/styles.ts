@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { ReactElement } from 'react';
+import { colors, sizes } from '../../core/styles/globalStyles';
 
 interface ITag {
   backgroundColor: string;
@@ -13,14 +14,16 @@ export const StyledTag = styled.div<ITag>`
   border-radius: 4px;
   display: flex;
   align-items: center;
+  svg {
+    width: 30px;
+  }
 `;
 
 export const StyledLabel = styled.h1`
-  font-size: 12px;
-  color: #ffffff;
-  font-weight: bold;
+  font-size: ${sizes.sizeS};
+  color: ${colors.white};
   letter-spacing: 0;
-  line-height: 12px;
+  line-height: ${sizes.sizeS};
   text-transform: uppercase;
   width: 64px;
 `;
