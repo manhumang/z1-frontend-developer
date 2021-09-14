@@ -2,7 +2,7 @@ import React from 'react';
 import * as Styled from './styles';
 
 interface ITypoProps {
-  text: string;
+  text?: string | false;
   color?: string;
   size?: string;
   weight?: 'bold' | number;

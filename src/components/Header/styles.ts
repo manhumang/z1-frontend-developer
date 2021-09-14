@@ -6,5 +6,7 @@ export const StyledHeader = styled.header`
   height: 60px;
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  h1 {
+    margin: 0 20px;
+  }
 `;

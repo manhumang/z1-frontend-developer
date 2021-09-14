@@ -12,6 +12,7 @@ const App: React.FC = (): JSX.Element => {
               key={route.path}
               path={route.path}
               component={route.component}
+              exact={true}
             />
           ))}
         </Switch>
